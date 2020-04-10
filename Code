@@ -1,0 +1,150 @@
+// ------------
+// Blink LED for first name according to morse code
+// ------------
+
+
+
+int led1 = D6; // better to write led1 instead of D6
+
+int led2 = D7; // better to write led2 instead of D7
+
+
+
+
+void setup() {
+
+
+
+	// It's important you do this here, inside the setup() function rather than outside it or in the loop function.
+
+	pinMode(led1, OUTPUT);
+	pinMode(led2, OUTPUT);
+
+}
+
+// Next we have the loop function, the other essential part of a microcontroller program.
+
+void loop() {
+    // My first name is Neel
+	// To display N(-.) in morse code
+	digitalWrite(led1, HIGH);
+	digitalWrite(led2, HIGH);
+
+	// We'll leave it on for 3 second for line...
+	delay(3000);
+
+	// Then we'll turn it off...
+	digitalWrite(led1, LOW);
+	digitalWrite(led2, LOW);
+
+	// Wait 1 second...
+	delay(1000);
+	
+	// Again we will turn it on for 1 second for dot...
+	digitalWrite(led1, HIGH);
+	digitalWrite(led2, HIGH);
+	
+	// Leave it on for a second...
+	delay(1000);
+	
+	// Turn it off ...
+	digitalWrite(led1, LOW);
+	digitalWrite(led2, LOW);
+	
+	// Wait for a second...
+	delay(1000);
+	// Now our letter N has been displayed on LED
+	
+	
+	// To display E(.) in morse code, we will turn it on for 1 second for dot...
+	digitalWrite(led1, HIGH);
+	digitalWrite(led2, HIGH);
+	
+	// Leave it on for a second...
+	delay(1000);
+	
+	// Turn it off ...
+	digitalWrite(led1, LOW);
+	digitalWrite(led2, LOW);
+	
+	// Wait for a second...
+	delay(1000);
+	
+	// same procedure one more time for another E
+	digitalWrite(led1, HIGH);
+	digitalWrite(led2, HIGH);
+	
+	// Leave it on for a second...
+	delay(1000);
+	
+	// Turn it off ...
+	digitalWrite(led1, LOW);
+	digitalWrite(led2, LOW);
+	
+	// Wait for a second...
+	delay(1000);
+	// E has been displayed twice, continuously
+	
+	// To display last letter L(.-..) in morse code...
+	// To display dot, we will turn it on for 1 second...
+	digitalWrite(led1, HIGH);
+	digitalWrite(led2, HIGH);
+	
+	// Leave it on for a second...
+	delay(1000);
+	
+	// Turn it off ...
+	digitalWrite(led1, LOW);
+	digitalWrite(led2, LOW);
+	
+	// Wait for a second...
+	delay(1000);
+	
+	// To display line...
+		digitalWrite(led1, HIGH);
+	digitalWrite(led2, HIGH);
+
+	// We'll leave it on for 3 second for line...
+	delay(3000);
+
+	// Then we'll turn it off...
+	digitalWrite(led1, LOW);
+	digitalWrite(led2, LOW);
+
+	// Wait 1 second...
+	delay(1000);
+	
+	// Again we will turn it on for 1 second for dot...
+	digitalWrite(led1, HIGH);
+	digitalWrite(led2, HIGH);
+	
+	// Leave it on for a second...
+	delay(1000);
+	
+	// Turn it off ...
+	digitalWrite(led1, LOW);
+	digitalWrite(led2, LOW);
+	
+	// Wait for a second...
+	delay(1000);
+	
+	// Same for one last dot in L
+		digitalWrite(led1, HIGH);
+	digitalWrite(led2, HIGH);
+	
+	// Leave it on for a second...
+	delay(1000);
+	
+	// Turn it off ...
+	digitalWrite(led1, LOW);
+	digitalWrite(led2, LOW);
+	
+	// Wait for a second...
+	delay(1000);
+	
+	// My first name is ready to be displayed on LED which is NEEL(-. . . .-..) in Morse Code
+	
+	
+
+	// And repeat!
+}
